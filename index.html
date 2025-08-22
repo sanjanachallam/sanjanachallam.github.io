@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Portfolio website: Home" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+  <nav class="container">
+    <a class="brand" href="index.html">Your Name</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="professional.html">Professional Development</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+<main class="container">
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Your Name</h1>
+    <p class="tagline">Shaping tomorrow's {domain} with innovation and precision.</p>
+    <p class="lead">
+      Welcome! I'm Your Name, a <strong>Role</strong> based in <strong>City, State</strong>.
+      I build <em>brief focus</em> and care about <em>impact</em>.
+    </p>
+    <div class="cta-row">
+      <a class="btn primary" href="resume.pdf" download>Download Resume</a>
+      <a class="btn" href="projects.html">View Projects</a>
+    </div>
+  </div>
+  <div class="hero-media">
+    <div class="placeholder">Add headshot: <code>img/headshot.jpg</code></div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>About Snapshot</h2>
+  <p>Short intro (3–5 lines) touching your tools, strengths, and what you're looking for.</p>
+</section>
+
+<section class="section">
+  <h2>Featured Projects</h2>
+  <ol class="project-list">
+    <li>
+      <h3>Project 1</h3>
+      <ul>
+        <li>What it is (role, scope)</li>
+        <li>How you did it (tools, method)</li>
+        <li>Impact with numbers</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Project 2</h3>
+      <ul>
+        <li>Problem → Approach → Outcome</li>
+      </ul>
+    </li>
+  </ol>
+  <p><a class="inline-link" href="projects.html">See all projects →</a></p>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container">© 2025 Your Name. All rights reserved.</div>
+</footer>
+<script>
+  // highlight active nav link
+  (function(){ 
+    const path = location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      if (a.getAttribute('href') === path) a.classList.add('active');
+    });
+  })();
+</script>
+</body>
+</html>

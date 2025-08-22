@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Your Name</title>
+  <meta name="description" content="Portfolio website: Contact" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+  <nav class="container">
+    <a class="brand" href="index.html">Your Name</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="professional.html">Professional Development</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+<main class="container">
+
+<section class="section">
+  <h1>Contact</h1>
+  <address>
+    <p>Your City, State</p>
+    <p><a href="mailto:you@example.com">you@example.com</a></p>
+    <p><a href="tel:+10000000000">+1 (000) 000-0000</a></p>
+    <p><a href="https://www.linkedin.com/" target="_blank" rel="noopener">linkedin.com/in/your-handle</a></p>
+    <p><a href="https://wa.me/911234567890" target="_blank" rel="noopener">WhatsApp (India)</a></p>
+  </address>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container">© 2025 Your Name. All rights reserved.</div>
+</footer>
+<script>
+  // highlight active nav link
+  (function(){ 
+    const path = location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      if (a.getAttribute('href') === path) a.classList.add('active');
+    });
+  })();
+</script>
+</body>
+</html>
